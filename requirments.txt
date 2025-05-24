@@ -1,0 +1,26 @@
+# Core application
+streamlit>=1.27.0
+python-dotenv>=1.0.0
+
+# Database connectors
+psycopg2-binary>=2.9.6  # PostgreSQL
+sqlalchemy>=2.0.0       # SQL toolkit and ORM
+pymssql>=2.2.7          # MS SQL Server
+mysql-connector-python>=8.0.0  # MySQL
+
+# AI APIs (excluding Ollama)
+anthropic>=0.5.0        # Anthropic Claude API
+openai>=1.3.0           # OpenAI API (also used for OpenRouter)
+# openrouter>=0.0.1       # OpenRouter API (not needed with updated OpenAI client)
+google-generativeai>=0.3.0  # Google Gemini API
+
+# Data processing and visualization
+pandas>=2.0.0
+plotly>=5.15.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Additional utilities
+pydantic>=2.0.0
+tqdm>=4.65.0
+graphviz

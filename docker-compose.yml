@@ -1,0 +1,34 @@
+version: '3'
+
+services:
+  db-chat:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./:/app
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY}
+    restart: unless-stopped
+#     networks:
+#       - app-network
+
+#   # ollama:
+#   #   image: ollama/ollama:latest
+#   #   ports:
+#   #     - "11434:11434"
+#   #   volumes:
+#   #     - ollama_data:/root/.ollama
+#   #   restart: unless-stopped
+#   #   networks:
+#   #     - app-network
+
+# networks:
+#   app-network:
+#     driver: bridge
+
+# volumes:
+#   ollama_data:
