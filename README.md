@@ -10,6 +10,8 @@ DB Chat is a powerful tool that allows you to query your databases using natural
 - **Schema Visualization**: View your database schema as an ER diagram.
 - **Interactive Data Visualization**: Create various charts and graphs from your query results.
 - **Table Browser**: Explore your database tables and preview their contents.
+- <img width="1890" height="1000" alt="image" src="https://github.com/user-attachments/assets/8dfde11c-2890-44e1-9ba5-70612646ea61" />
+
 
 ## Requirements
 
